@@ -69,7 +69,21 @@
 
 
         [captureMetadataOutput setMetadataObjectsDelegate:self queue:self.captureSessionQueue];
-        [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObject:AVMetadataObjectTypeQRCode]];
+        [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObjects:
+                                                       AVMetadataObjectTypeQRCode,//二维码
+                                                       AVMetadataObjectTypeCode128Code,
+                                                       AVMetadataObjectTypeEAN8Code,
+                                                       AVMetadataObjectTypeUPCECode,//条形码
+                                                       AVMetadataObjectTypeCode39Code,
+                                                       AVMetadataObjectTypePDF417Code,
+                                                       AVMetadataObjectTypeAztecCode,
+                                                       AVMetadataObjectTypeCode93Code,
+                                                       AVMetadataObjectTypeEAN13Code,
+                                                       AVMetadataObjectTypeCode39Mod43Code,
+                                                       AVMetadataObjectTypeInterleaved2of5Code,
+                                                       AVMetadataObjectTypeITF14Code,
+                                                       AVMetadataObjectTypeDataMatrixCode,
+                                                       nil]];
         
     }
     return _captureSession;
