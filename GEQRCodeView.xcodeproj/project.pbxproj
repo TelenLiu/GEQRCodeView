@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C7497B6331B435D92B6E91D /* libPods-GEQRCodeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C14C3EE01AA45E7B349FFC0 /* libPods-GEQRCodeView.a */; };
+		6D4CC8381AEA396E00A734DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BA4F6D1973841B006AEF7B /* Main.storyboard */; };
 		E900DF6619760E340037A564 /* btn_topbar_back_hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E900DF6419760E340037A564 /* btn_topbar_back_hover@2x.png */; };
 		E900DF6719760E340037A564 /* btn_topbar_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E900DF6519760E340037A564 /* btn_topbar_back_white@2x.png */; };
 		E9BA4F5C1973841B006AEF7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA4F5B1973841B006AEF7B /* Foundation.framework */; };
@@ -16,10 +16,8 @@
 		E9BA4F661973841B006AEF7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9BA4F641973841B006AEF7B /* InfoPlist.strings */; };
 		E9BA4F681973841B006AEF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4F671973841B006AEF7B /* main.m */; };
 		E9BA4F6C1973841B006AEF7B /* GEQRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4F6B1973841B006AEF7B /* GEQRAppDelegate.m */; };
-		E9BA4F6F1973841B006AEF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BA4F6D1973841B006AEF7B /* Main.storyboard */; };
 		E9BA4F721973841B006AEF7B /* GEQRDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4F711973841B006AEF7B /* GEQRDemoViewController.m */; };
 		E9BA4F741973841B006AEF7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BA4F731973841B006AEF7B /* Images.xcassets */; };
-		E9BA4F7B1973841B006AEF7B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA4F7A1973841B006AEF7B /* XCTest.framework */; };
 		E9BA4F7C1973841B006AEF7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA4F5B1973841B006AEF7B /* Foundation.framework */; };
 		E9BA4F7D1973841B006AEF7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BA4F5F1973841B006AEF7B /* UIKit.framework */; };
 		E9BA4F851973841B006AEF7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9BA4F831973841B006AEF7B /* InfoPlist.strings */; };
@@ -41,8 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C14C3EE01AA45E7B349FFC0 /* libPods-GEQRCodeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GEQRCodeView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6390F62679F41DFA017BC95 /* Pods-GEQRCodeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEQRCodeView.xcconfig"; path = "Pods/Pods-GEQRCodeView.xcconfig"; sourceTree = "<group>"; };
 		E900DF6419760E340037A564 /* btn_topbar_back_hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_topbar_back_hover@2x.png"; path = "resource/btn_topbar_back_hover@2x.png"; sourceTree = "<group>"; };
 		E900DF6519760E340037A564 /* btn_topbar_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_topbar_back_white@2x.png"; path = "resource/btn_topbar_back_white@2x.png"; sourceTree = "<group>"; };
 		E9BA4F581973841B006AEF7B /* GEQRCodeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GEQRCodeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +56,6 @@
 		E9BA4F711973841B006AEF7B /* GEQRDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEQRDemoViewController.m; sourceTree = "<group>"; };
 		E9BA4F731973841B006AEF7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9BA4F791973841B006AEF7B /* GEQRCodeViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GEQRCodeViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9BA4F7A1973841B006AEF7B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E9BA4F821973841B006AEF7B /* GEQRCodeViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GEQRCodeViewTests-Info.plist"; sourceTree = "<group>"; };
 		E9BA4F841973841B006AEF7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9BA4F861973841B006AEF7B /* GEQRCodeViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEQRCodeViewTests.m; sourceTree = "<group>"; };
@@ -82,7 +77,6 @@
 				E9BA4F5E1973841B006AEF7B /* CoreGraphics.framework in Frameworks */,
 				E9BA4F601973841B006AEF7B /* UIKit.framework in Frameworks */,
 				E9BA4F5C1973841B006AEF7B /* Foundation.framework in Frameworks */,
-				4C7497B6331B435D92B6E91D /* libPods-GEQRCodeView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9BA4F7B1973841B006AEF7B /* XCTest.framework in Frameworks */,
 				E9BA4F7D1973841B006AEF7B /* UIKit.framework in Frameworks */,
 				E9BA4F7C1973841B006AEF7B /* Foundation.framework in Frameworks */,
 			);
@@ -115,7 +108,6 @@
 				E9BA4F801973841B006AEF7B /* GEQRCodeViewTests */,
 				E9BA4F5A1973841B006AEF7B /* Frameworks */,
 				E9BA4F591973841B006AEF7B /* Products */,
-				D6390F62679F41DFA017BC95 /* Pods-GEQRCodeView.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,8 +126,6 @@
 				E9BA4F5B1973841B006AEF7B /* Foundation.framework */,
 				E9BA4F5D1973841B006AEF7B /* CoreGraphics.framework */,
 				E9BA4F5F1973841B006AEF7B /* UIKit.framework */,
-				E9BA4F7A1973841B006AEF7B /* XCTest.framework */,
-				3C14C3EE01AA45E7B349FFC0 /* libPods-GEQRCodeView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,11 +206,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9BA4F8A1973841B006AEF7B /* Build configuration list for PBXNativeTarget "GEQRCodeView" */;
 			buildPhases = (
-				A4C8F970191F470886ACD2E5 /* Check Pods Manifest.lock */,
 				E9BA4F541973841B006AEF7B /* Sources */,
 				E9BA4F551973841B006AEF7B /* Frameworks */,
 				E9BA4F561973841B006AEF7B /* Resources */,
-				E1DD2DC354DA4F908E97D3BB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +247,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = lerosua;
 				TargetAttributes = {
+					E9BA4F571973841B006AEF7B = {
+						DevelopmentTeam = L9E89VMHQT;
+					};
 					E9BA4F781973841B006AEF7B = {
 						TestTargetID = E9BA4F571973841B006AEF7B;
 					};
@@ -288,10 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4CC8381AEA396E00A734DD /* Main.storyboard in Resources */,
 				E9BA4F741973841B006AEF7B /* Images.xcassets in Resources */,
 				E9BA4F661973841B006AEF7B /* InfoPlist.strings in Resources */,
 				E900DF6719760E340037A564 /* btn_topbar_back_white@2x.png in Resources */,
-				E9BA4F6F1973841B006AEF7B /* Main.storyboard in Resources */,
 				E900DF6619760E340037A564 /* btn_topbar_back_hover@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,39 +296,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A4C8F970191F470886ACD2E5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E1DD2DC354DA4F908E97D3BB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-GEQRCodeView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9BA4F541973841B006AEF7B /* Sources */ = {
@@ -472,30 +430,32 @@
 		};
 		E9BA4F8B1973841B006AEF7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6390F62679F41DFA017BC95 /* Pods-GEQRCodeView.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GEQRCodeView/GEQRCodeView-Prefix.pch";
 				INFOPLIST_FILE = "GEQRCodeView/GEQRCodeView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "013b63d2-21d7-49be-ad74-a4370b500f32";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		E9BA4F8C1973841B006AEF7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6390F62679F41DFA017BC95 /* Pods-GEQRCodeView.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GEQRCodeView/GEQRCodeView-Prefix.pch";
 				INFOPLIST_FILE = "GEQRCodeView/GEQRCodeView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "013b63d2-21d7-49be-ad74-a4370b500f32";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

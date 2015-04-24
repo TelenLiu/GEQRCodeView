@@ -9,7 +9,6 @@
 #import "GEQRViewController.h"
 #import "XHScanningView.h"
 #import "XHCaptureHelper.h"
-#import "ZBarSDK.h"
 
 
 @import AVFoundation;
@@ -21,7 +20,7 @@
 #define ScreenWidth             [[UIScreen mainScreen] bounds].size.width
 #define GEStatusBarOffet        ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? 20 : 0)
 
-@interface GEQRViewController ()<AVCaptureMetadataOutputObjectsDelegate,ZBarReaderViewDelegate,UIAlertViewDelegate>
+@interface GEQRViewController ()<AVCaptureMetadataOutputObjectsDelegate,UIAlertViewDelegate>
 @property (nonatomic,strong) AVCaptureSession *captureSession;
 @property (nonatomic,strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property (nonatomic,strong) XHScanningView *scanningView;
@@ -31,7 +30,6 @@
 @property (nonatomic,assign) BOOL isReading;
 @property (nonatomic,strong) UIActivityIndicatorView *activityView;
 
-@property (nonatomic,strong) ZBarReaderView *zbarReaderView;
 @property (nonatomic,assign) BOOL isInit;
 @end
 
@@ -79,17 +77,6 @@
         _scanningView = [[XHScanningView alloc] initWithFrame:CGRectMake(0, (CURRENT_SYS_VERSION >= 7.0 ? 64 : 0), CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - (CURRENT_SYS_VERSION >= 7.0 ? 64 : 0))];
     }
     return _scanningView;
-}
-- (ZBarReaderView *) zbarReaderView
-{
-    if(!_zbarReaderView){
-        _zbarReaderView = [ZBarReaderView new];
-        _zbarReaderView.frame = self.view.bounds;
-        _zbarReaderView.readerDelegate = self;
-        _zbarReaderView.allowsPinchZoom = NO;
-        [self.preview addSubview:_zbarReaderView];
-    }
-    return _zbarReaderView;
 }
 
 #pragma mark -
@@ -155,7 +142,7 @@
             }
         }];
     }else{
-        [self startZBarQRReader];
+
     }
     
 
@@ -279,34 +266,6 @@ static const NSInteger kZBarLabelFontSize = 20;
             [weakSelf.activityView stopAnimating];
             [weakSelf.scanningView scanning];
         }];
-    }
-}
-- (void) startZBarQRReader
-{
-    if(!_isInit){
-        _isInit = YES;
-        [self.activityView startAnimating];
-        [self.zbarReaderView start];
-    }
-}
-
-- (void) readerViewDidStart: (ZBarReaderView*) readerView
-{
-    [self.activityView stopAnimating];
-    [self.scanningView scanning];
-}
-- (void) readerView: (ZBarReaderView*) readerView
-     didReadSymbols: (ZBarSymbolSet*) symbols
-          fromImage: (UIImage*) image
-{
-    const zbar_symbol_t *symbol = zbar_symbol_set_first_symbol(symbols.zbarSymbolSet);
-    NSString *symbolStr = [NSString stringWithUTF8String: zbar_symbol_get_data(symbol)];
-    
-    
-    if (zbar_symbol_get_type(symbol) == ZBAR_QRCODE) {  // 是否QR二维码
-        [self.zbarReaderView stop];
-        NSString *urlString = symbolStr;
-        [self.delegate qrReaderViewController:self didFinishPickingInformation:urlString ];
     }
 }
 
